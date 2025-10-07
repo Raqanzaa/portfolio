@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import profileMain from "../assets/profile.png";
+import profileMain from "../assets/pro-profile.png";
 import TrueFocusText from "./animation/TrueFocusText.jsx";
 
 const HomeSection = () => {
@@ -20,7 +20,7 @@ const HomeSection = () => {
       className="min-h-screen flex items-center justify-between px-6 md:px-9 py-6 md:py-20 text-gray-200"
     >
       <div className="max-w-2xl lg:max-w-3xl">
-        <h1 
+        <h1
           className="text-3xl md:text-5xl font-bold mb-4"
           data-aos="fade-right"
           data-aos-delay="100"
@@ -28,11 +28,7 @@ const HomeSection = () => {
           <span>Ahmad Rozaq Ubaidillah</span>
         </h1>
 
-        <div 
-          className="mb-4"
-          data-aos="fade-right"
-          data-aos-delay="200"
-        >
+        <div className="mb-4" data-aos="fade-right" data-aos-delay="200">
           <TrueFocusText
             sentence="Web Developer"
             manualMode={false}
@@ -43,7 +39,7 @@ const HomeSection = () => {
           />
         </div>
 
-        <p 
+        <p
           className="text-md md:text-lg mb-8"
           data-aos="fade-right"
           data-aos-delay="300"
@@ -55,7 +51,7 @@ const HomeSection = () => {
           to detail.
         </p>
 
-        <div 
+        <div
           className="flex flex-wrap mb-4 sm:mb-8 gap-2 sm:gap-4"
           data-aos="fade-up"
           data-aos-delay="400"
@@ -67,14 +63,14 @@ const HomeSection = () => {
             Hire Me
           </a>
           <a
-            href="https://drive.google.com/file/d/1iwKkM5WKJWbH86b0izhH3gdtgCwBalHZ/view?usp=sharing"
+            href="https://drive.google.com/file/d/1gNEuBOXYDqoFNnMGXYIc8PuXj3G75pwk/view?usp=sharing"
             className="px-4 py-2 sm:px-6 sm:py-2.5 md:px-8 md:py-3 border-2 border-gray-200 text-gray-200 font-semibold rounded-lg hover:bg-gray-600 hover:text-dark transition text-sm sm:text-base"
           >
-            Unduh CV
+            Download CV
           </a>
         </div>
 
-        <div 
+        <div
           className="flex gap-3 sm:gap-4"
           data-aos="fade-up"
           data-aos-delay="500"
@@ -88,15 +84,15 @@ const HomeSection = () => {
               className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 border-2 border-gray-200 rounded-full flex items-center justify-center hover:bg-gray-600 transition group"
               aria-label={link.label}
               data-aos="zoom-in"
-              data-aos-delay={600 + (index * 100)}
+              data-aos-delay={600 + index * 100}
             >
               {link.icon}
             </a>
           ))}
         </div>
       </div>
-      
-      <div 
+
+      <div
         className="hidden md:block relative w-80 h-80 lg:w-96 lg:h-96"
         data-aos="zoom-in"
         data-aos-delay="400"
